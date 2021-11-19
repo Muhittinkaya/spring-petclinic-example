@@ -2,9 +2,11 @@ package kaya.springexample.springpetclinicexample.services.map;
 
 import kaya.springexample.springpetclinicexample.model.Owner;
 import kaya.springexample.springpetclinicexample.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
     @Override

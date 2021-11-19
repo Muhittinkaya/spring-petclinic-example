@@ -1,11 +1,11 @@
 package kaya.springexample.springpetclinicexample.services.map;
 
 import kaya.springexample.springpetclinicexample.model.Pet;
-import kaya.springexample.springpetclinicexample.services.CrudService;
 import kaya.springexample.springpetclinicexample.services.PetService;
-
+import org.springframework.stereotype.Service;
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
