@@ -2,10 +2,11 @@ package kaya.springexample.springpetclinicexample.services.map;
 
 import kaya.springexample.springpetclinicexample.model.Pet;
 import kaya.springexample.springpetclinicexample.services.CrudService;
+import kaya.springexample.springpetclinicexample.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
